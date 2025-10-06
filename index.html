@@ -11,12 +11,11 @@
       font-family:system-ui,-apple-system,"Segoe UI",Roboto;
     }
 
-    /* 背景画像＋黒フィルター */
     body {
       background: 
-        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), /* ←黒の半透明フィルター */
-        url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPmavjvV_T1cc6mEOBKgzlIiOksId3n6jYxqtxpC6i1iGKjowEFxQmgBDhkwlUdFRaHJeyKiyJUUjeQf9A_0nBXIV06yzxQ5cdZwM93JpY2UoTk716EDFLEFh4MJilfA_o9UXt-ga1OdLKVw-ngXW-C6YHeaCHeFMWe5pYi_OqKKhj1y-nEL_KNLYP/s1920/Minecraft_2024_07_19_0_06_50.jpeg") center/cover no-repeat;     /* ←背景画像 */
-      color: #fff; /* 文字を白にして見やすく */
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url("minecraft-bg.jpg") center/cover no-repeat;
+      color:#fff;
     }
 
     .wrap {
@@ -24,6 +23,15 @@
       place-items:center;
       height:100%;
       text-align:center;
+      padding: 0 10px; /* スマホで左右が切れないように */
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
     }
 
     .btn {
@@ -33,6 +41,21 @@
       background:#5865F2;
       color:#fff;
       text-decoration:none;
+      font-size: 1rem;
+    }
+
+    /* スマホ用に文字を大きくする */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem; /* 見出しを大きめに */
+      }
+      p {
+        font-size: 1.2rem; /* 本文も少し大きく */
+      }
+      .btn {
+        font-size: 1.1rem; /* ボタン文字も拡大 */
+        padding:12px 20px;
+      }
     }
   </style>
 </head>
@@ -51,4 +74,5 @@
   </script>
 </body>
 </html>
+
 

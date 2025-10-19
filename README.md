@@ -1,2 +1,2 @@
 # jidouidou-discord
-アクセス後自動でぬくぬく広場discordに参加できます。
+アクセス後自動でdiscordに参加できます。
